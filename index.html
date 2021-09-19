@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- External JavaScript Link -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="title">SignUp to our newsletter</h2>
+    </header>
+    <main>
+        <form action="/" method="get" id="form" class="form">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="input-group">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <p id="error"></p>
+            </div>
+            <button type="submit">SignUp</button>
+        </form>
+    </main>
+</body>
+</html>
